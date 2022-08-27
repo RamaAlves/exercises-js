@@ -1,0 +1,48 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background:#ededed;
+}
+
+h1{
+    margin:20px auto;
+    padding:10px;
+    width:fit-content;
+    color:#48e;
+    background:#cdcdcd;
+}
+.seleccion-posicion-fib{
+    margin:60px auto 40px;
+    padding:10px;
+    width:fit-content;
+}
+.seleccion-posicion-fib input{
+    width:80px;
+    color:#222;
+    outline:none;
+    font-size:1rem;
+}
+.seleccion-posicion-fib button{
+    width:fit-content;
+    color:#2af;
+    background:#222;
+    outline:none;
+    font-size:1rem;
+    font-weight: 700;
+}
+.resultado{
+    margin:40px;
+    padding:20px;
+    background:#cdcdcd;
+    height: 300px;
+    color:#222;
+}
+.resultado p{
+    margin:20px auto;
+    background:#ababab;
+    color:#222;
+    width:80%;
+    height:80%;
+    overflow:auto;
+}
