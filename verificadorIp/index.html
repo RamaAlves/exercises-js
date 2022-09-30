@@ -10,12 +10,14 @@
 </head>
 <body>
     <form id="form">
-        <label for="input">Ip a verificar</label>
-        <input required type="text" id="input" placeholder="Ingrese la ip a verificar">
-        <small>Ej: 185.65.135.230</small>
-        <button type="submit" id="submit">Verificar Ip</button>
+        <label for="input">IP a verificar</label>
+        <div>
+            <input required type="text" id="input" placeholder="Ingrese la ip a verificar">
+            <small>IP de ejemplo: 185.65.135.230</small>
+        </div>
+        <button type="submit" id="submit">Verificar IP</button>
     </form>
-    <div>
+    <div class="container-results">
         <pre id="results"></pre>
     </div>
 </body>

@@ -14,6 +14,7 @@ const fetchIpInfo = ip =>{
 
 const form = document.querySelector("#form")
 const input = document.querySelector("#input")
+const containerRes = document.querySelector(".container-results")
 const results = document.querySelector("#results")
 const button = document.querySelector("#submit")
 
@@ -27,11 +28,15 @@ form.addEventListener("submit", async (event)=>{
 
     const ipInfo = await fetchIpInfo(value)
 
+    
     if(ipInfo){
+        containerRes.style.display = "block";
         results.innerHTML = JSON.stringify(ipInfo,null,2)
+        console.log(ipInfo.risk_level);
     }
-
+    
     button.textContent = "Verificar Ip";
+    input.value= ""
     button.removeAttribute("disabled")
 
 })
